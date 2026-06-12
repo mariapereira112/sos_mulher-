@@ -1,0 +1,6 @@
+{
+  "name": "SOS Mulher",
+  "description": "Plataforma de segurança pessoal para mulheres",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
