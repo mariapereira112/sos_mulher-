@@ -119,3 +119,10 @@ dependencies {
   "ksp"(libs.androidx.room.compiler)
   "ksp"(libs.moshi.kotlin.codegen)
 }
+
+tasks.register<Copy>("copyApkToRoot") {
+  dependsOn("assembleDebug")
+  from(file("${layout.buildDirectory.get().asFile}/outputs/apk/debug/app-debug.apk"))
+  into(file("${rootDir}/apk"))
+  rename { "SOSMulher_debug.apk" }
+}
